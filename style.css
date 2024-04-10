@@ -2,10 +2,10 @@
 
 :root{
     --branco: rgb(247, 247, 247);
-    --cor-de-fundo: #24020d;
-    --fundo-senha: #be7896;
-    --fundo-texto: #920b48;
-    --borda: #610025;
+    --cor-de-fundo: #8cabd3;
+    --fundo-senha: #d1cfd0;
+    --fundo-texto: #021246;
+    --borda: #2f2183;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -47,6 +47,7 @@ body{
     color: var(--branco);
     font-family: var(--roboto-mono);
     font-size: 40px;
+    width: 70%;
 }
 
 #campo-senha:focus{
@@ -76,5 +77,20 @@ body{
 
 .parametro-coluna__senha{
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
 }
+.parametro-senha{
+    width: 50%;
+    margin:0 auto;
+}
+@media screen and (min-width: 700px){
+    .parametro-coluna__senha{
+        flex-direction: row;
+    }
+    
+    
+}
+    
+
+    
