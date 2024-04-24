@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
 :root{
-    --branco: rgb(247, 247, 247);
-    --cor-de-fundo: #8cabd3;
-    --fundo-senha: #d1cfd0;
-    --fundo-texto: #021246;
-    --borda: #2f2183;
+    --branco: white;
+    --cor-de-fundo: #00162E;
+    --fundo-senha: #00244D;
+    --fundo-texto: #001E40;
+    --borda: #0075FF;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -29,13 +29,13 @@ body{
     font-size: 24px;
 }
 
-.conteudo-titulo{ 
+.conteudo-titulo{
     text-align: center;
     margin-top: 80px;
 }
 
 .conteudo-senha{
-    margin-top: 80px;
+    margin-top: 80px; 
     background: var(--fundo-senha);
     padding: 24px;
     border-bottom: 6px solid var(--borda);
@@ -72,7 +72,7 @@ body{
 }
 
 .parametro-senha__titulo{
-    font-size: 24px;
+    font-size:24px;
 }
 
 .parametro-coluna__senha{
@@ -82,10 +82,10 @@ body{
 }
 .parametro-senha{
     width: 50%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.parametro-senha__botoes{
+.parametro-senha-botoes{
     display: flex;
     justify-content: center;
 }
@@ -100,9 +100,9 @@ body{
 }
 .parametro-senha__texto{
     padding: 24px;
-    border-top: 24px solid var(--borda);
-    border-bottom: 2epx solid var(--borda);
-    margin: 0%;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
     font-size: 24px;
 }
 
@@ -119,36 +119,34 @@ label{
 .barra{
     background-color: var(--fundo-senha);
     height: 30px;
-    width: 100px;
+    width: 100%;
+}
+.forca{
+    height: 30px;
+    position: relative;
+    bottom: 30px;
 }
 .fraca{
-    height: 30px;
     width: 25%;
-    background-color: #e71b32;
-    position: relative;
-    bottom: 30px;
+    background-color: #E71B32; 
 }
 .media{
-    background-color: #FaF408;
+    background-color: #FAF408;
     width: 50%;
-    height: 30px;
-    position: relative;
-    bottom: 30px;
-
-
 }
+.forte{
+    background-color: #00FF85;
+    width: 100%;
+}
+
 .parametro-senha-textos{
     display: flex;
     justify-content: space-between;
 }
 
-@media screen and (min-width: 700px){
+
+@media screen and (min-width: 768px) {
     .parametro-coluna__senha{
         flex-direction: row;
     }
-    
-    
 }
-    
-
-    
